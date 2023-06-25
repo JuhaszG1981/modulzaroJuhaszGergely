@@ -106,9 +106,9 @@ public class DelModHouse extends JDialog {
 			
 		for (Ingatlan ingatlan : ingatlanok) {
 			
-			if (ingatlan.getHrsz() == txfHrsz.getText()) {
+			if (txfHrsz.getText().equals(ingatlan.getHrsz())) {
 				lblTulaj.setText(ingatlan.getTulajdonos());
-				lblAlapterulet.setText(Integer.toString(ingatlan.getAlapterulet()));
+				txfAlapterulet.setText(Integer.toString(ingatlan.getAlapterulet()));
 				txfErtek.setText(Integer.toString(ingatlan.getAr()));
 			}
 			
